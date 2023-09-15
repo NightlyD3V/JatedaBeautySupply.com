@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css"/>
+
+</head>
+<body  x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div id="topbar_container">
+        <div id="logo_container">
+            <div id="logo_r"></div>
+            <div>
+                <div id="logo_l-1"></div>
+                <div id="logo_l-2"></div>
+            </div>
+            <h1><span style="color:#331e36">J</span><span style="color:#331e36">A</span>TEDA</h1>
+        </div>
+        <nav id="nav_links">
+            <a href="/">HOME</a>
+            <a @click.prevent="isModalOpen=true">CONSULTATION</a>
+            <a href="./products.html">PRODUCTS</a>
+        </nav>
+        <img id="hamburger" src="./images/menu-icon.svg"/>
+    </div>
+    <nav id="mobile_nav">
+        <a href="/">HOME</a>
+        <a @click.prevent="isModalOpen=true">CONSULTATION</a>
+        <a href="./products.html">PRODUCTS</a>
+    </nav>
+
+    <div id="construction">
+        <img src="./images/warning.png"/>
+        <h1>Under Construction!</h1>
+        <p>Check back later.</p>
+    </div>
+
+     <!-- MODAL -->
+     <div
+     class="modal"
+     role="dialog"
+     tabindex="-1"
+     x-show="isModalOpen"
+     x-on:click.away="isModalOpen = false"
+     x-cloak
+     x-transition
+     >
+         <div class="model-inner">
+         <div class="modal-header">
+             <button aria-label="Close" @click="isModalOpen=false">✖</button>
+         </div>
+        
+         <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/tylerspaulding/15min" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+         </div>
+     </div>
+     <div class="overlay" x-show="isModalOpen" x-cloak></div>
+     <script src="./index.js"></script>
+</body>
+</html>
