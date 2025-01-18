@@ -403,7 +403,7 @@ footer p {
      }
     .service_box {
         height: 100px;
-        width: 50%;
+        width: 60%;
      }
     #middle_image {
         display: none;
@@ -416,7 +416,7 @@ footer p {
         flex-direction: column;
      }
      .testimonial {
-        width: 50%;
+        width: 75%;
      }
  }
 /* END INDEX */
