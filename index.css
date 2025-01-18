@@ -50,8 +50,7 @@ table {
  }
 /* INDEX */
 html {
-   max-width: 100%;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 #logo_container {
     margin: 0;
