@@ -49,6 +49,10 @@ table {
     border-spacing: 0;
  }
 /* INDEX */
+html {
+   max-width: 100%;
+   overflow: hidden;
+}
 #logo_container {
     margin: 0;
     margin-right: 350px;
@@ -382,6 +386,9 @@ footer p {
     #hamburger {
         display: inline-block;
         visibility: visible;
+        position: fixed; 
+        right: 25px;
+        top: 25px;
      }
     #topbar_container {
         justify-content: space-between;
