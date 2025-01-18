@@ -191,7 +191,7 @@ table {
 .modal {
     height: 100%;
     position: fixed;
-    top: 125px;
+    top: 25px;
     width: 100%;
     z-index: 10;
  }
