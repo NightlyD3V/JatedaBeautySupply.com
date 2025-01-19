@@ -442,6 +442,11 @@ footer p {
         justify-content: center;
         align-items: center;
      }    
+     .price_box {
+       max-width: 400px;
+       margin: 0 auto;
+       margin-bottom: 25px;
+     }
     #middle_image {
         display: none;
         visibility: hidden;
