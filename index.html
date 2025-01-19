@@ -39,10 +39,9 @@
         <div data-aos="fade-right" id="middle_container">
             <div id="middlelogo_r">
                 <div id="middlelogo_l-1"></div>
-                <h1 id="tagline">"A New Standard in Hair Care."</h1>
+                <h1 id="tagline">"A New Standard In Hair Care."</h1>
                 <h3>Elevate Your Elegance: Unveiling  JATEDA, 
                     Where Luxury Meets Beauty.</h3>
-                <button id="consult_button" @click.prevent="isModalOpen=true">Schedule a Consultation</button>
                 <div id="middlelogo_l-2"></div>
             </div>
             <img id="middle_image" src="./images//hairStylist_0.jpg"/>
@@ -71,19 +70,81 @@
     </section>
     <section>
         <h1 id="middleHeader">SERVICES</h1>
-        <div data-aos="flip-up" id="services_container">
+        <div id="services_container">
             <p>Hair Design</p>
-            <img class="service_box" src="./images/hairstyle.png"/>
+            <img data-aos="flip-up" class="service_box-1" src="./images/hairstyle.png"/>
             <p>Lockes</p>
-            <img class="service_box" src="images/man.png"/>
+            <img data-aos="flip-up" class="service_box-1" src="images/man.png"/>
             <p>Makeup</p>
-            <img class="service_box" src="images/eyeliner.png"/>
+            <img data-aos="flip-up" class="service_box-1" src="images/eyeliner.png"/>
+        </div>
+    </section>
+    <section>
+        <h1 id="middleHeader">PRICES</h1>
+        <div id="prices_container">
+            <div>
+                <div data-aos="fade-up" class="price_box">
+                    <p style="font-size: 2rem; margin-bottom: 25px">CONSULTATIONS</p>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>FREE</p>
+                    </div>
+                    <button type="button" class="price_button" @click.prevent="isModalOpen=true">Schedule</button>
+                </div>
+                <div data-aos="fade-left" class="price_box">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                        <p style="font-size: 2rem;">LOCKES</p>
+                        <p><b>$150</b></p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>Hair assement and wash</p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>Re-twist or straighten</p>
+                    </div>
+                    <button type="button" class="price_button" @click.prevent="isModalOpen=true">Schedule</button>
+                </div>
+            </div>
+            <div>
+                <div data-aos="fade-right" class="price_box">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                        <p style="font-size: 2rem;">MAKEUP</p>
+                        <p><b>$50</b></p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>Conceal and highlight</p>
+                    </div>
+                    <button type="button" class="price_button" @click.prevent="isModalOpen=true">Schedule</button>
+                </div>
+                <div data-aos="fade-up" class="price_box">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                        <p style="font-size: 2rem;">HAIR DESIGN</p>
+                        <p><b>$200</b></p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>Hair assement and wash</p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>Complete makeover</p>
+                    </div>
+                    <div style="display: flex; color: #ca7c83">
+                        <p>&#9745;</p>
+                        <p>The works</p>
+                    </div>
+                    <button type="button" class="price_button" @click.prevent="isModalOpen=true">Schedule</button>
+                </div>
+            </div>
         </div>
     </section>
     <section>
         <h1 id="middleHeader">TESTIMONIALS</h1>
-        <div id="testimonial_container">
-            <div data-aos="fade-up" class="testimonial">
+        <div id="testimonial_container-1">
+            <div data-aos="fade-up" class="testimonial-1">
                 <img src="./images/Jateda_testimonial-1.jpg"/>
                 <div class="star_container">
                     <div class="five-pointed-star"></div>
@@ -95,7 +156,7 @@
                 <p>“A seriously different 
                     kind of experience”</p>
             </div>
-            <div data-aos="fade-up" class="testimonial">
+            <div data-aos="fade-up" class="testimonial-1">
                 <img src="./images/Jateda_testimonial-2.jpg"/>
                 <div class="star_container">
                     <div class="five-pointed-star"></div>
@@ -107,7 +168,7 @@
                 <p>“My lockes have never
                     looked better”</p>
             </div>
-            <div data-aos="fade-up" class="testimonial">
+            <div data-aos="fade-up" class="testimonial-1">
                 <img src="./images/Jateda_testimonial-3.jpeg"/>
                 <div class="star_container">
                     <div class="five-pointed-star"></div>

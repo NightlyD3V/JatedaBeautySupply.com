@@ -231,7 +231,7 @@ html, body {
     background-color: #cecfc7;
     font-size: 1.5rem;
     margin-top: 50px;
-    padding: 25px;
+    padding: 50px;
     text-align: center;
     font-family: 'Julius Sans One', sans-serif;
  }
@@ -246,46 +246,83 @@ html, body {
     font-family: 'Julius Sans One', sans-serif;
     position: relative;
     text-orientation: mixed;
-    
     transform: rotate(180deg);
     writing-mode: vertical-rl;
  }
-.service_box {
+.service_box-1 {
     background-color: #c99da3;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    float: left;
-    height: 100px;
+    height: 15%;
     margin: 10px;
     object-fit: contain;
     padding: 50px;
-    width:  100px;
+    width:  5%;
  }
-#testimonial_container {
+#testimonial_container-1 {
     align-items: center;
-    background-color: #cecfc7;
+    background-color: #713e5a;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     width: 100%;
+    height: 500px;
  }
-.testimonial {
+.testimonial-1 {
     background-color: #331e36;
     border-top: 60px solid #713e5a;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     float: left;
-    height: 250px;
+    height: 50%;
     margin: 50px;
     text-align: center;
     padding: 25px;
-    width:  355px;
+    width:  50%;
  }
-.testimonial img {
+.testimonial-1 img {
     border-radius: 100%;
     bottom: 50px;
-    height: 100px;
+    height: 125px;
     object-fit: cover;
     position: relative;
-    width: 100px;
+    width: 125px;
+ }
+ .testimonial-1 p {
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Julius Sans One', sans-serif;
+    white-space: pre-line;
+    color: white;
+ }
+ #prices_container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;   
+   margin-top: 50px;
+ }
+ .price_box {
+   border: 1px solid grey;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-bottom: 100px;
+   padding-top: 50px;
+   width: 500px;
+   height: 200px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.5rem;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   display: flex;
+   flex-direction: column;
+ }
+ .price_button {
+   color: white; 
+   background-color: #713e5a;
+   border: none;
+   padding: 15px;
+   margin: 25px;
+   font-size: 1.25rem;
+   font-family: 'Julius Sans One', sans-serif;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
  }
 .star_container {
     display: flex;
@@ -331,13 +368,6 @@ html, body {
     width: 0;
  }
 
-.testimonial p {
-    color: white;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.5rem;
-    padding: 10px;
- }
-
 #bottom_contact {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
@@ -358,7 +388,7 @@ footer p {
     color:#713e5a
  }
 
-/* MEDIA QUERIES */
+/* MOBILE */
 @media (max-width: 850px) {
     #nav_links {
         display: none;
@@ -401,10 +431,17 @@ footer p {
     #services_container p {
         transform: rotate(-90deg);
      }
-    .service_box {
-        height: 100px;
+    .service_box-1 {
+        object-fit: contain;
+        height: 300px;
         width: 60%;
      }
+     #prices_container {
+        flex-direction: column;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+     }    
     #middle_image {
         display: none;
         visibility: hidden;
@@ -412,11 +449,17 @@ footer p {
     #middlelogo_r {
         width: 100%;
      }
-    #testimonial_container {
+    #testimonial_container-1 {
         flex-direction: column;
+        height: 1500px;
      }
-     .testimonial {
+     .testimonial-1 {
         width: 75%;
+     }
+     #basket {
+      position: fixed;
+      right: 80px;
+      top: 25px;
      }
  }
 /* END INDEX */
@@ -430,3 +473,12 @@ footer p {
     margin-top: 100px;
     font-family: 'Julius Sans One', sans-serif;
  }
+ /* TABLET */
+@media (max-width: 1200px) {
+   #prices_container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   } 
+}
+   
