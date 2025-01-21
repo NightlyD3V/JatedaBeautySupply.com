@@ -33,12 +33,21 @@
         <a @click.prevent="isModalOpen=true">CONSULTATION</a>
         <a href="./products.html">PRODUCTS</a>
     </nav>
-
-    <div id="construction">
-        <img src="./images/warning.png" style="width:50px; text-align: center;"/>
-        <h1>Store will open to the public soon!</h1>
-        <p>check back later.</p>
-    </div>
+    
+    <section style="margin-top: 150px;">
+        <div class="product">
+          <img src="./images/revlon_hair-dryer.jpg" alt="The cover of Stubborn Attachments"
+            style="width: 400px; height: 400px;"
+          />
+          <div class="description">
+            <h3>Revlon infrared hair dryer</h3>
+            <h5>$20.00</h5>
+          </div>
+        </div>
+        <form action="/create-checkout-session" method="POST">
+          <button type="submit" id="checkout-button">Checkout</button>
+        </form>
+    </section>
 
      <!-- MODAL -->
      <div
