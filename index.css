@@ -477,6 +477,9 @@ footer p {
    right: 80px;
    top: 25px;
    }
+   #shop_container {
+      flex-direction: column;
+   }
  }
 /* END MOBILE */
  /* TABLET */
