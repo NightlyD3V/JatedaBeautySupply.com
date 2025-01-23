@@ -390,9 +390,18 @@ footer p {
     color:#713e5a
  }
  /* PRODUCTS */
+ #shop_container {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-top: 100px;
+ }
  .product {
-   width: 500px;
+   width: 80%;
    height: 200px;
+   margin: 50px;
+   border: 1px solid black;
+   padding: 100px;
  }
 
 /* MOBILE */
@@ -479,6 +488,7 @@ footer p {
    }
    #shop_container {
       flex-direction: column;
+      margin-top: 100px;
    }
  }
 /* END MOBILE */
