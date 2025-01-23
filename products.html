@@ -33,21 +33,6 @@
         <a @click.prevent="isModalOpen=true">CONSULTATION</a>
         <a href="./products.html">PRODUCTS</a>
     </nav>
-    
-    <section style="margin-top: 150px;">
-        <div class="product">
-          <img src="./images/revlon_hair-dryer.jpg" alt="The cover of Stubborn Attachments"
-            style="width: 400px; height: 400px;"
-          />
-          <div class="description">
-            <h3>Revlon infrared hair dryer</h3>
-            <h5>$20.00</h5>
-          </div>
-        </div>
-        <form action="/create-checkout-session" method="POST">
-          <button type="submit" id="checkout-button">Checkout</button>
-        </form>
-    </section>
 
      <!-- MODAL -->
      <div
@@ -71,6 +56,22 @@
          </div>
      </div>
      <div class="overlay" x-show="isModalOpen" x-cloak></div>
-     <script src="./index.js"></script>
+
+     <!-- SHOP ITEMS -->
+     <section style="margin-top: 150px;">
+        <div class="product">
+          <img src="./images/revlon_hair-dryer.jpg" alt="The cover of Stubborn Attachments"
+            style="width: 150px; height: 150px;"
+          />
+          <div class="description">
+            <h3>Revlon infrared hair dryer</h3>
+            <h5>$20.00</h5>
+          </div>
+        </div>
+        <form method="GET">
+          <button type="submit" class="checkout-button">Checkout</button>
+        </form>
+    </section>
+     <script src="./checkout.js"></script>
 </body>
 </html>

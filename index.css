@@ -111,9 +111,10 @@ html, body {
     display: hidden;
     margin: 0 auto;
     visibility: hidden;
+    background-color: #331e36;
  }
 #mobile_nav a:hover {
-    background-color: #331e36;
+    background-color: #713e5a;
  }
 #hamburger {
     background-color: #713e5a;
@@ -168,6 +169,7 @@ html, body {
     width: 125px;
  }
 #tagline {
+    font-family: "Roboto", serif;
     bottom: 170px;
     color: white;
     font-size: 1.5rem;
@@ -228,8 +230,8 @@ html, body {
  }
 /* ------------------------ */
 #middleHeader {
-    background-color: #cecfc7;
-    font-size: 1.5rem;
+    background-color: #eff8e2;
+    font-size: 2rem;
     margin-top: 50px;
     padding: 50px;
     text-align: center;
@@ -390,97 +392,88 @@ footer p {
 
 /* MOBILE */
 @media (max-width: 850px) {
-    #nav_links {
-        display: none;
-        visibility: hidden;
-     }
-     #nav_strip {
-        height: 20px;
-     }
-    #mobile_nav {
-        background-color: #713e5a;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 0px;
-        top: 95px;
-        width: 100%;
-        z-index: 1;
-     }
-    #mobile_nav a {
-        color: white;
-        max-width: 100%;
-        padding: 25px;
-        text-align: center;
-        text-decoration: none;
-     }
-    #hamburger {
-        display: inline-block;
-        visibility: visible;
-        position: fixed; 
-        right: 25px;
-        top: 25px;
-     }
-    #topbar_container {
-        justify-content: space-between;
-     }
-    #consult_button {
-        left: 150px;
-     }
-    #services_container{
-          flex-direction: column;
-       }
-    #services_container p {
-        transform: rotate(-90deg);
-     }
-    .service_box-1 {
-        object-fit: contain;
-        height: 150px;
-        width: 60%;
-     }
-     #prices_container {
-        flex-direction: column;
-        font-size: 1rem;
-        justify-content: center;
-        align-items: center;
-     }    
-     .price_box {
-       max-width: 300px;
-       margin: 0 auto;
-       margin-bottom: 25px;
-     }
-    #middle_image {
-        display: none;
-        visibility: hidden;
-     }
-    #middlelogo_r {
-        width: 100%;
-     }
-    #testimonial_container-1 {
-        flex-direction: column;
-        height: 1500px;
-     }
-     .testimonial-1 {
-        width: 75%;
-     }
-     #basket {
+   #nav_links {
+      display: none;
+      visibility: hidden;
+   }
+   #nav_strip {
+      height: 20px;
+   }
+   #mobile_nav {
+      background-color: #331e36;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      display: flex;
+      flex-direction: column;
       position: fixed;
-      right: 80px;
+      right: 0px;
+      top: 95px;
+      width: 100%;
+      z-index: 1;
+   }
+   #mobile_nav a {
+      color: white;
+      max-width: 100%;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+   }
+   #hamburger {
+      display: inline-block;
+      visibility: visible;
+      position: fixed; 
+      right: 25px;
       top: 25px;
-     }
+   }
+   #topbar_container {
+      justify-content: space-between;
+   }
+   #consult_button {
+      left: 150px;
+   }
+   #services_container{
+         flex-direction: column;
+      }
+   #services_container p {
+      transform: rotate(-90deg);
+   }
+   .service_box-1 {
+      object-fit: contain;
+      height: 150px;
+      width: 60%;
+   }
+   #prices_container {
+      flex-direction: column;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+   }    
+   .price_box {
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+   }
+   #middle_image {
+      display: none;
+      visibility: hidden;
+   }
+   #middlelogo_r {
+      width: 100%;
+   }
+   #testimonial_container-1 {
+      flex-direction: column;
+      height: 1500px;
+   }
+   .testimonial-1 {
+      width: 75%;
+      margin-bottom: 25px;
+   }
+   #basket {
+   position: fixed;
+   right: 80px;
+   top: 25px;
+   }
  }
-/* END INDEX */
-/* PRODUCTS */
-#construction {
-    display: flex;
-    flex-direction: column;
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    font-family: 'Julius Sans One', sans-serif;
- }
+/* END MOBILE */
  /* TABLET */
 @media (max-width: 1200px) {
    #prices_container {
@@ -488,5 +481,13 @@ footer p {
       justify-content: center;
       align-items: center;
    } 
+   #testimonial_container-1 {
+      display: flex;
+      flex-direction: column;
+      height: 1500px;    
+   }
+   .service_box-1 {
+      width: 100px;
+   }
 }
-   
+/* END TABLET */

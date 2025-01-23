@@ -25,5 +25,10 @@ hamburger.addEventListener("mouseup", (e) => {
     open_hamburber = !open_hamburber 
     open_hamburber ? hamburger_show.play() : hamburger_hide.play()
 });
-
-AOS.init();
+// HANDLE CHECKOUT
+const checkout_button = document.querySelector('.checkout-button');
+checkout_button.addEventListener('click', async event => {
+    event.preventDefault
+    const response = await fetch('http://127.0.0.1:8000/payment_api')
+    console.log(response)
+})
