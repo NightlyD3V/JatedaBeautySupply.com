@@ -389,6 +389,11 @@ footer p {
     font-size: 0.7rem;
     color:#713e5a
  }
+ /* PRODUCTS */
+ .product {
+   width: 500px;
+   height: 200px;
+ }
 
 /* MOBILE */
 @media (max-width: 850px) {

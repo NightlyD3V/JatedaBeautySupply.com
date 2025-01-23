@@ -12,7 +12,6 @@ hamburger.addEventListener("mouseup", (e) => {
         begin: function() {
             mobile_nav.style.visibility = "visible"
         }
-        
     })
     let hamburger_hide = anime({
         targets: [mobile_nav],
@@ -26,9 +25,48 @@ hamburger.addEventListener("mouseup", (e) => {
     open_hamburber ? hamburger_show.play() : hamburger_hide.play()
 });
 // HANDLE CHECKOUT
-const checkout_button = document.querySelector('.checkout-button');
-checkout_button.addEventListener('click', async event => {
-    event.preventDefault
-    const response = await fetch('http://127.0.0.1:8000/payment_api')
-    console.log(response)
-})
+// BUY NOW
+const buy_button = document.querySelectorAll('.buy-button');
+buy_button.forEach(button => { button.addEventListener('click', async event => {
+    event.preventDefault()
+    const stripe = Stripe('pk_test_iFlVIBdzmPmFXEFGNPX2WIy700R7NtKmOZ');
+    const elements = stripe.elements();
+    const cardElement = elements.create('card');
+    const productContainer = button.closest('.product');
+    const cardElementContainer = productContainer.querySelector('.card-element');
+
+    cardElement.mount(cardElementContainer);
+
+    const form = document.querySelectorAll('.payment-form');
+    const resultMessage = document.getElementById('payment-result');
+
+    form.forEach(button => { button.addEventListener('submit', async (event) => {
+        event.preventDefault()
+
+        const { token, error } = await stripe.createToken(cardElement);
+
+        if (error) {
+            resultMessage.textContent = error.message;
+        } else {
+            // Send the token to your Laravel backend
+            fetch('laravel_backend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    token: token.id,
+                    amount: 100, // Amount in dollars
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultMessage.textContent = data.message;
+            })
+            .catch(error => {
+                resultMessage.textContent = 'Payment failed. Please try again.';
+            });
+        }
+    })});
+})})
+// TODO: ADD TO CART 

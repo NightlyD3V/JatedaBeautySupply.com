@@ -58,20 +58,43 @@
      <div class="overlay" x-show="isModalOpen" x-cloak></div>
 
      <!-- SHOP ITEMS -->
-     <section style="margin-top: 150px;">
-        <div class="product">
-          <img src="./images/revlon_hair-dryer.jpg" alt="The cover of Stubborn Attachments"
+     <section style="margin-top: 150px; display: flex; justify-content: center; align-items: center">
+        <!-- PRODUCT 1 -->
+        <div class="product" style="border: 1px solid black; padding: 50px; margin: 25px;">
+          <img src="./images/revlon_hair-dryer.jpg" alt="Revlon infrared hair dryer"
             style="width: 150px; height: 150px;"
           />
           <div class="description">
-            <h3>Revlon infrared hair dryer</h3>
-            <h5>$20.00</h5>
+            <h3>Revlon infrared hair dryer - $30</h3>
           </div>
+          <form class="payment-form">
+              <div class="card-element">
+                  <!-- Stripe Card Element will be inserted here -->
+              </div>
+              <button data-product-id="1" data-product-price="30" class="buy-button">BUY NOW</button>
+          </form>
+          <button class="add_cart">ADD TO CART</button>
         </div>
-        <form method="GET">
-          <button type="submit" class="checkout-button">Checkout</button>
-        </form>
+        <p id="payment-result"></p>
+        <!-- PRODUCT 2 -->
+        <div class="product" style="border: 1px solid black; padding: 50px; margin: 25px;">
+            <img src="./images/biosilk.jpg" alt="biolsilk hair care product"
+              style="width: 150px; height: 150px;"
+            />
+            <div class="description">
+              <h3>Biosilk - $20</h3>
+            </div>
+            <form class="payment-form">
+                <div class="card-element">
+                    <!-- Stripe Card Element will be inserted here -->
+                </div>
+                <button data-product-id="2" data-product-price="20" class="buy-button">BUY NOW</button>
+            </form>
+            <button class="add_cart">ADD TO CART</button>
+          </div>
+          <p id="payment-result"></p>
     </section>
-     <script src="./checkout.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script defer src="./checkout.js"></script>
 </body>
 </html>
