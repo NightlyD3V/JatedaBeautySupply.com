@@ -507,7 +507,7 @@ footer p {
       height: 1500px;    
    }
    .service_box-1 {
-      width: 100px;
+      width: 50%;
    }
    #shop_container {
       flex-direction: column;
