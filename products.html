@@ -25,6 +25,7 @@
             <a @click.prevent="isModalOpen=true">CONSULTATION</a>
             <a href="./products.html">PRODUCTS</a>
         </nav>
+        <p id="cart_counter">0</p>
         <img id="basket" src="images/basket.png" style="width: 40px; margin-left: 15px;"/>
         <img id="hamburger" src="./images/menu-icon.svg"/>
     </div>
@@ -65,7 +66,7 @@
             style="width: 150px; height: 150px;"
           />
           <div class="description">
-            <h3>Revlon infrared hair dryer - $30</h3>
+            <h3>Revlon Infrared Dryer - $30</h3>
           </div>
           <form class="payment-form">
               <div class="card-element">
@@ -91,10 +92,28 @@
                 <button data-product-id="2" data-product-price="20" class="buy-button">BUY NOW</button>
             </form>
             <button class="add_cart">ADD TO CART</button>
-          </div>
-          <p id="payment-result"></p>
+        </div>
+        <p id="payment-result"></p>
+        <!-- PRODUCT 3 -->
+        <div class="product">
+            <img src="./images/cantu.jpg" alt="biolsilk hair care product"
+              style="width: 150px; height: 150px;"
+            />
+            <div class="description">
+              <h3>Biosilk - $10</h3>
+            </div>
+            <form class="payment-form">
+                <div class="card-element">
+                    <!-- Stripe Card Element will be inserted here -->
+                </div>
+                <button data-product-id="2" data-product-price="10" class="buy-button">BUY NOW</button>
+            </form>
+            <button class="add_cart">ADD TO CART</button>
+        </div>
+        <p id="payment-result"></p>
     </section>
     <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.min.js"></script>
     <script defer src="./checkout.js"></script>
 </body>
 </html>

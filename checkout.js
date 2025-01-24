@@ -25,11 +25,11 @@ hamburger.addEventListener("mouseup", (e) => {
     open_hamburber ? hamburger_show.play() : hamburger_hide.play()
 });
 // HANDLE CHECKOUT
-// BUY NOW
+//--  BUY NOW --//
 const buy_button = document.querySelectorAll('.buy-button');
 buy_button.forEach(button => { button.addEventListener('click', async event => {
     event.preventDefault()
-    const stripe = Stripe('pk_test_iFlVIBdzmPmFXEFGNPX2WIy700R7NtKmOZ');
+    const stripe = Stripe(process.env.STRIPE_API);
     const elements = stripe.elements();
     const cardElement = elements.create('card');
     const productContainer = button.closest('.product');
@@ -70,3 +70,6 @@ buy_button.forEach(button => { button.addEventListener('click', async event => {
     })});
 })})
 // TODO: ADD TO CART 
+const cart_counter = document.querySelector('#cart_counter')
+
+

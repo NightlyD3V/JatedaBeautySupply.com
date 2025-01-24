@@ -106,6 +106,7 @@ html, body {
  }
 #nav_links {
     display: flex;
+    font-family: "Roboto", serif;
  }
 #mobile_nav {
     display: hidden;
@@ -230,7 +231,6 @@ html, body {
  }
 /* ------------------------ */
 #middleHeader {
-    background-color: #eff8e2;
     font-size: 2rem;
     margin-top: 50px;
     padding: 50px;
@@ -238,11 +238,11 @@ html, body {
     font-family: 'Julius Sans One', sans-serif;
  }
 #services_container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 100%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   width: 100%;
  }
 #services_container p {
     font-family: 'Julius Sans One', sans-serif;
@@ -302,6 +302,8 @@ html, body {
    margin-top: 50px;
  }
  .price_box {
+   background-color: white;
+   z-index: 1;
    border: 1px solid grey;
    padding-left: 25px;
    padding-right: 25px;
@@ -506,6 +508,10 @@ footer p {
    }
    .service_box-1 {
       width: 100px;
+   }
+   #shop_container {
+      flex-direction: column;
+      margin-top: 100px;
    }
 }
 /* END TABLET */
