@@ -29,7 +29,7 @@ hamburger.addEventListener("mouseup", (e) => {
 const buy_button = document.querySelectorAll('.buy-button');
 buy_button.forEach(button => { button.addEventListener('click', async event => {
     event.preventDefault()
-    const stripe = Stripe(process.env.STRIPE_API);
+    const stripe = Stripe("pk_test_iFlVIBdzmPmFXEFGNPX2WIy700R7NtKmOZ");
     const elements = stripe.elements();
     const cardElement = elements.create('card');
     const productContainer = button.closest('.product');
