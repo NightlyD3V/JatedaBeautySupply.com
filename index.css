@@ -89,7 +89,7 @@ html, body {
    width: 25px;
 }
 
-#topbar_container {
+.topbar_container {
    align-items: center;
    background-color: #331e36;
    display: flex;
@@ -102,7 +102,7 @@ html, body {
    z-index: 3;
 }
 
-#topbar_container h1 {
+.topbar_container h1 {
    bottom: 10px;
    color: white;
    font-family: 'Julius Sans One', sans-serif;
@@ -111,7 +111,7 @@ html, body {
    position: absolute;
 }
 
-#topbar_container a {
+.topbar_container a {
    color: white;
    font-family: 'Julius Sans One', sans-serif;
    margin-left: 15px;
@@ -121,7 +121,8 @@ html, body {
 
 #nav_links {
    display: flex;
-   font-family: "Roboto", serif;
+   font-family: 'Julius Sans One', sans-serif;
+   text-decoration: none;
 }
 
 #mobile_nav {
@@ -136,19 +137,16 @@ html, body {
 }
 
 #hamburger {
-   background-color: #713e5a;
-   border-radius: 40%;
-   max-height: 15px;
-   padding: 10px;
+   height: 25px;
    visibility: hidden;
    display: none;
 }
 
 #nav_strip {
-   background-color: #713e5a;
-   height: 30px;
-   position: relative;
-   width: 100%;
+   background-color: #713e5a !important;
+   height: 30px !important;
+   position: relative !important;
+   width: 100% !important;
 }
 
 #middle_container {
@@ -534,7 +532,7 @@ footer p {
       margin-top: 90px;
    }
 
-   #topbar_container {
+   .topbar_container {
       justify-content: space-between;
    }
 
@@ -564,7 +562,7 @@ footer p {
    }
 
    .price_box {
-      max-width: 300px;
+      max-width: 400px;
       margin: 0 auto;
       margin-bottom: 25px;
    }

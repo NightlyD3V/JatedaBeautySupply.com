@@ -2,6 +2,7 @@ const hamburger = document.getElementById("hamburger")
 const mobile_nav = document.getElementById("mobile_nav")
 let open_hamburber = false;
 hamburger.addEventListener("mouseup", (e) => {
+    console.log("clicked nav")
     let hamburger_show = anime({
         targets: [mobile_nav],
         translateY: ['-100','0'],
@@ -10,6 +11,7 @@ hamburger.addEventListener("mouseup", (e) => {
         easing: 'easeInOutSine',
         duration: 500,
         begin: function() {
+            console.log("played")
             mobile_nav.style.visibility = "visible"
         }
         

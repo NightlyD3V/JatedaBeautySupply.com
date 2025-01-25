@@ -12,7 +12,7 @@
 
 </head>
 <body  x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
-    <div id="topbar_container">
+    <div class="topbar_container">
         <div id="logo_container">
             <div id="logo_r"></div>
             <div>
@@ -22,13 +22,11 @@
             <h1 class="text-center"><span style="color:#331e36">J</span><span style="color:#331e36">A</span>TEDA</h1>
         </div>
         <nav id="nav_links">
-            <a href="/">HOME</a>
+            <a href="https://nightlyd3v.github.io/JatedaBeautySupply.com/">HOME</a>
             <a @click.prevent="isModalOpen=true">CONSULTATION</a>
-            <a href="./products.html">PRODUCTS</a>
         </nav>
-        <p id="cart_counter">0</p>
-        <img id="basket" src="images/basket.png" style="width: 40px; margin-left: 15px;"/>
-        <img id="hamburger" src="./images/menu-icon.svg"/>
+      
+        <img id="hamburger" src="/images/menu-icon.svg"/>
     </div>
     <nav id="mobile_nav">
         <a href="/">HOME</a>
@@ -112,6 +110,7 @@
           </div>
         </div>
       </div>
+
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.min.js"></script>
     <script defer src="./checkout.js"></script>
