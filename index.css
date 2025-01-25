@@ -299,13 +299,19 @@ html, body {
 }
 
 .service_box-1 {
-   background-color: #c99da3;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
    height: 15%;
    margin: 10px;
    object-fit: contain;
    padding: 50px;
    width: 5%;
+   /* Semi-transparent white background */
+   backdrop-filter: blur(10px);
+   /* Frosted glass effect */
+   border-radius: 10px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   /* Light border for depth */
+   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 #testimonial_container-1 {
@@ -479,11 +485,14 @@ footer p {
       flex-direction: column;
       margin-top: 100px;
    }
-}
 
+   #middle_container {
+      margin-top: 125px;
+   }
+}
 /* END TABLET */
 /* MOBILE */
-@media (max-width: 850px) {
+@media (max-width: 800px) {
    #nav_links {
       display: none;
       visibility: hidden;
@@ -519,6 +528,10 @@ footer p {
       position: fixed;
       right: 25px;
       top: 25px;
+   }
+
+   #middle_container {
+      margin-top: 90px;
    }
 
    #topbar_container {

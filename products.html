@@ -75,86 +75,43 @@
                           <!-- Stripe Card Element will be inserted here -->
                       </div>
                       <button data-product-id="1" data-product-price="10" type="button" class="buy-button text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">BUY NOW</button>
-      
-                  </form>
-                  <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">ADD TO CART</button>
+                    </form>
+                    <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">ADD TO CART</button>
 
-                  <p id="payment-result"></p>   
+                    <p id="payment-result"></p>   
                 </div>
             </a>
             <a href="#" class="group">
-              <img src="./images/biosilk.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
-              <h3 class="mt-4 text-sm text-gray-700">BioSilk</h3>
-              <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+              <div class="product">
+                <img src="./images/biosilk.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
+                <h3 class="mt-4 text-sm text-gray-700">BioSilk</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+                <form class="payment-form">
+                  <div class="card-element">
+                      <!-- Stripe Card Element will be inserted here -->
+                  </div>
+                  <button data-product-id="1" data-product-price="10" type="button" class="buy-button text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">BUY NOW</button>
+                </form>
+                <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">ADD TO CART</button>
+  
+                <p id="payment-result"></p>  
+              </div>
             </a>
             <a href="#" class="group">
-              <img src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
-              <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-              <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+              <img src="./images/cantu.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
+              <h3 class="mt-4 text-sm text-gray-700">Cantu</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$25</p>
             </a>
             <a href="#" class="group">
-              <img src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
-              <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
-              <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+              <img src="./images/dreamcoat.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
+              <h3 class="mt-4 text-sm text-gray-700">Dream Coat</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$15</p>
             </a>
       
             <!-- More products... -->
           </div>
         </div>
       </div>
-     <section id="product_container" class="flex flex-col items-center p-7 rounded-2xl">
-        <!-- PRODUCT 1 -->
-        <div class="product">
-          <img src="./images/revlon_hair-dryer.jpg" alt="Revlon infrared hair dryer"
-            style="width: 150px; height: 150px;"
-          />
-          <div class="description">
-            <h3>Revlon Infrared Dryer - $30</h3>
-          </div>
-          <form class="payment-form">
-              <div class="card-element">
-                  <!-- Stripe Card Element will be inserted here -->
-              </div>
-             
-          </form>
-          <button class="add-cart">ADD TO CART</button>
-        </div>
-        <p id="payment-result"></p>
-        <!-- PRODUCT 2 -->
-        <div class="product">
-            <img src="./images/biosilk.jpg" alt="biolsilk hair care product"
-              style="width: 150px; height: 150px;"
-            />
-            <div class="description">
-              <h3>Biosilk - $20</h3>
-            </div>
-            <form class="payment-form">
-                <div class="card-element">
-                    <!-- Stripe Card Element will be inserted here -->
-                </div>
-                <button data-product-id="2" data-product-price="20" class="buy-button">BUY NOW</button>
-            </form>
-            <button class="add-cart">ADD TO CART</button>
-        </div>
-        <p id="payment-result"></p>
-        <!-- PRODUCT 3 -->
-        <div class="product">
-            <img src="./images/cantu.jpg" alt="biolsilk hair care product"
-              style="width: 150px; height: 150px;"
-            />
-            <div class="description">
-              <h3>Leave-in Conditioner - $10</h3>
-            </div>
-            <form class="payment-form">
-                <div class="card-element">
-                    <!-- Stripe Card Element will be inserted here -->
-                </div>
-                <button data-product-id="2" data-product-price="10" class="buy-button">BUY NOW</button>
-            </form>
-            <button class="add-cart">ADD TO CART</button>
-            <p id="payment-result"></p>
-        </div>
-    </section>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.min.js"></script>
     <script defer src="./checkout.js"></script>
