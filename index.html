@@ -194,9 +194,27 @@
     </section>
     <!-- FOOTER -->
     <div id="bottom_contact">
-        <h1>CONTACT US:</h1>
-        <h1>1800-888-8888</h1>
-        <h1>SomEmail@gmail.com</h1>
+        <div id="contact-container" style="display: flex; align-items: center; justify-content: center;">
+            <div>
+                <h1>CONTACT US:</h1>
+                <h1>1800-888-8888</h1>
+                <h1>SomEmail@gmail.com</h1>
+            </div>
+            <div id="hours">
+                <div class="hrs">
+                    <h2 class="text-uppercase ral-reg-bold">Hours</h2>
+                    <ul class="clearfix">
+                                    <li><p>Mon  <span class="float-right">  9am - 5pm</span></p></li>
+                                    <li><p>Tue   <span class="float-right">  9am - 9pm</span></p></li>
+                                    <li><p>Wed  <span class="float-right">  9am - 9pm</span></p></li>
+                                    <li><p>Thu  <span class="float-right">  9am - 9pm</span></p></li>
+                                    <li><p>Fri   <span class="float-right">  9am - 8pm</span></p></li>
+                                    <li><p>Sat   <span class="float-right">  - CLOSED </span></p></li>
+                                    <li><p>Sun  <span class="float-right">  - CLOSED </span></p></li>
+                                    </ul>
+                </div>
+            </div>
+        </div>
         <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
             fill="none">
@@ -224,7 +242,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/3.7.1/tsparticles.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script>
     <script type="text/javascript">
-    (async () => {
+        (async () => {
         await loadSnowPreset(tsParticles);
 
         await tsParticles.load({

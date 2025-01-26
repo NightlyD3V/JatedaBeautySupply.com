@@ -358,6 +358,13 @@ html, body {
    margin-top: 50px;
 }
 
+#hours {
+   font-family: 'Julius Sans One', sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 25px;
+   margin-top: 25px;
+}
+
 .price_box {
    z-index: 1;
    border: 1px solid grey;
@@ -498,6 +505,10 @@ footer p {
 
    #nav_strip {
       height: 20px;
+   }
+
+   #contact-container {
+      flex-direction: column;
    }
 
    #mobile_nav {
